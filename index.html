@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+
+    <div class="container">
+        
+        <img src="img/logo.png" class="logo" alt="">
+        <h1 class="init-text">Digite o nome da cidade que você quer consultar</h1>
+    <div class="resultado">
+        <div class="titulo">--</div>
+
+        <div class="info">
+            <div class="temp">
+                <div class="tempTitulo">Temperatura</div>
+                <div class="tempInfo">-- <sup>ºC</sup></div>
+                <label class="weathersit">
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" />
+                <legend></legend>
+            </label>
+            </div>
+            <div class="vento">
+                <div class="ventoTitulo">Vento</div>
+                <div class="ventoInfo">-- <span>km/h</span></div>
+                <div class="ventoArea">
+                    <div class="ventoPonto" style="transform: rotate(0deg)"></div>
+                </div>
+                <h1>20°</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <form class="busca">
+        <input type="search" id="searchInput" />
+        <label class="btns-form">
+        <button>Buscar</button> <button class="clear" onclick="clearInfo()">Limpar</button>
+    </label>
+    </form>
+
+</div>
+
+    <div class="aviso"></div>
+
+    <div class="modalWarning">
+        <img src="img/erro-icon.png" alt="">
+        <h2>OPS! Pareceu que algo deu errado... Tente corrigir o nome da cidade ou tentar novamente...</h2>
+        <button class="closeModal"> Ok </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

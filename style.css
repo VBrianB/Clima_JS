@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all ease 300ms;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(218, 213, 213);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #FFF;
+    margin: 20px 0;
+}
+
+.busca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    
+}
+.busca #searchInput {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0;
+    background-color: rgb(253, 253, 253);
+}
+.busca button {
+    padding: 10px;
+    font-size: 15px;
+    border: 0;
+    background-color: rgb(253, 149, 65);
+    color: #FFF;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.busca button:hover {
+    background-color: rgb(255, 126, 20);
+}
+
+.resultado {
+    width: 400px;
+    display: none;
+    margin-top: 20px;
+    border-radius: 5px;
+   
+}
+
+.titulo {
+    width: 100%;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.info {
+    display: flex;
+    width: 100%;
+}
+.info .temp {
+    flex: 1;
+    text-align: center;
+}
+.info .vento {
+    flex: 1;
+    text-align: center;
+}
+.vento,
+.temp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tempTitulo,
+.ventoTitulo {
+    color: #FFF;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.tempInfo,
+.ventoInfo {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: bold;
+}
+.tempInfo sup {
+    font-size: 15px;
+    font-weight: normal;
+}
+.ventoInfo span {
+    font-size: 15px;
+    font-weight: normal;
+}
+.ventoArea {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 20px;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+.ventoPonto {
+    width: 15px;
+    height: 1px;
+    background-color: #FFF;
+    transform-origin: left;
+}
+
+.aviso {
+    color: rgb(70, 70, 70);
+    padding-top: 20px;
+}
+
+footer {
+    position: absolute;
+    bottom: 15px;
+}
+
+.container{
+    padding: 20px;
+    background-color: #177cce;
+    color: black;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 35px 3em rgba(0, 0, 0, 0.274);
+    border-radius: 32px;
+}
+.logo{
+    max-width: 82px;
+    border-radius: 32px;
+}
+.weathersit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+.weathersit legend{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+    
+}
+.init-text{
+    margin: 40px 0;
+    margin-bottom: 20px;
+    max-width: 280px;
+    text-align: center;
+    font-size: 16px;
+}
+form{
+    margin-bottom: 20px;
+}
+
+.modalWarning{
+    
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    border-radius: 32px;
+    padding-bottom: 30px;
+    display: none;
+    transition: .5s;
+}
+
+.modalWarning img{
+    max-width: 120px;
+    margin-bottom: 25px;
+}
+.modalWarning h2{
+    text-align: center;
+    font-size: 18px;
+    color: rgb(48, 48, 48);
+}
+.closeModal{
+    padding: 12px 42px;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: #177cce;
+    border-radius: 32px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+   
+   
+}
+.form-btns{
+    display: flex;
+}
+.closeModal:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+.clear{
+   
+}
