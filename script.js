@@ -52,8 +52,6 @@ function showInfo(obj){
 
 function clearInfo(){
     Warning('');
-    let input = document.querySelector('#searchInput').value;
-    input.innerHTML = "";
     document.querySelector('.resultado').style.display = 'none';
     document.querySelector('.init-text').style.display = 'block'
 }
